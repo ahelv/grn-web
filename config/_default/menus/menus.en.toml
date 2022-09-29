@@ -2,7 +2,7 @@
   name = "Farrell Data"
   weight = 10
   identifier = "farrell"
-  url = "/docs/farrell/"
+  url = "/docs/farrell/overview"
 
 [[docs]]
   name = "Kenny Data"
@@ -62,7 +62,7 @@
   name = "Farrell Data"
   weight = 40
   identifier = "farrell"
-  url = "/docs/farrell/" #path to markdown file where content/en/ is the root
+  url = "/docs/farrell/overview" #path to markdown file where content/en/ is the root
   parent = "Networks"
 
 [[main]]

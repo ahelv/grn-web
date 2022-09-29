@@ -1,0 +1,26 @@
+---
+title: "Prior Strength 0"
+author: "Annika Helverson"
+date: "`r Sys.Date()`"
+output: html_document
+weight: 1
+type: docs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+net <- 'data/network/gl/fns-h3k-s0.rds'
+max_width <- 1
+max_node <- 6
+title <- 'GL H3K27Ac S0'
+```
+
+
+```{r, child = '/Users/ahelverson/Desktop/RA/Patrick/web/sunil-site/static/parents/_Network_Vis.Rmd'}
+
+```
+
+[Download Hub Gene List](/tables/GL H3K27Ac S0.html)
+
+[Download Network Image](/en/docs/farrell/Graphical-LASSO/h3k/s0_files/figure-html/unnamed-chunk-3-1.png)

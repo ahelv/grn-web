@@ -20,3 +20,7 @@ title <- 'GENIE3'
 ```{r, child = '/Users/ahelverson/Desktop/RA/Patrick/web/sunil-site/static/parents/_Network_Vis.Rmd'}
 
 ```
+
+[Download Hub Gene List](/tables/GENIE3.html)
+
+[Download Network Image](/en/docs/farrell/GENIE3/GENIE3_files/figure-html/unnamed-chunk-3-1.png)

@@ -20,3 +20,7 @@ title <- 'WGCNA'
 ```{r, child = '/Users/ahelverson/Desktop/RA/Patrick/web/sunil-site/static/parents/_Network_Vis.Rmd'}
 
 ```
+
+[Download Hub Gene List](/tables/WGCNA.html)
+
+[Download Network Image](/en/docs/farrell/WGCNA/WGCNA_files/figure-html/unnamed-chunk-3-1.png)

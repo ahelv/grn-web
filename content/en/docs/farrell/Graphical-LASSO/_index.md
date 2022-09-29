@@ -10,6 +10,6 @@ menu:
   docs:
     parent: "farrell"
     identifier: "glasso"
-weight: 999
+weight: 500
 toc: true
 ---
