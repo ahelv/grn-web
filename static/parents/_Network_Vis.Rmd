@@ -14,7 +14,7 @@ library(igraph)
 library(ggraph)
 library(reactable)
 library(data.table)
-library(downloadthis)
+library(tableHTML)
 source.all(path = '/Users/ahelverson/Desktop/RA/Patrick/clb-cornell-grn/R')
 ```
 
@@ -24,16 +24,19 @@ graph <- make_graph(net)
 graph %>% plot_graph(max_width = max_width, max_node = max_node) +
   ggtitle(title)
 
-
-graph %>% 
+t <- graph %>% 
   hub_genes %>%
-  .[, Rank := 1:nrow(.)] %>%
+  .[, Rank := 1:nrow(.)] 
+
+t %>%
   reactable(filterable = TRUE, searchable = TRUE, highlight = TRUE, 
             resizable = TRUE,
             theme = reactableTheme(color = "white", backgroundColor = "#3C3C3C", 
                                  borderColor = "white",
                                  highlightColor = "grey83"),
             fullWidth = TRUE)
+
+write_tableHTML(tableHTML(t), file = paste0("/Users/ahelverson/Desktop/RA/Patrick/web/sunil-site/static/tables/", title, ".html"))
 ```
 
 

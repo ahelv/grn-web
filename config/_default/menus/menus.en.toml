@@ -1,14 +1,14 @@
 [[docs]]
-  name = "Prologue"
+  name = "Farrell Data"
   weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
+  identifier = "farrell"
+  url = "/docs/farrell/"
 
 [[docs]]
-  name = "Help"
+  name = "Kenny Data"
   weight = 60
-  identifier = "help"
-  url = "/docs/help/"
+  identifier = "kenny"
+  url = "/docs/kenny/"
 
 # [[docs]]
 #   name = "Lorem"
@@ -29,18 +29,27 @@
   url = "/tutorial/lorem/"
   
 [[main]]
-  name = "Networks"
-  url = "/networks/"
-  weight = 20
-  
-[[main]]
   name = "PR-Curves"
-  url = "/pr-curves/"
+  url = "/blog/"
   weight = 20
   
 [[main]]
-  name = "Docs"
-  url = "/docs/prologue/introduction/"
+  name = "Farrell Data"
+  weight = 40
+  identifier = "farrell"
+  url = "/blog/" #path to markdown file where content/en/ is the root
+  parent = "PR-Curves"
+
+[[main]]
+  name = "Kenny Data"
+  weight = 50
+  identifier = "kenny"
+  url = "/blog/"
+  parent = "PR-Curves"
+  
+[[main]]
+  name = "Networks"
+  url = "/docs/"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 10
 
@@ -50,24 +59,18 @@
 #   weight = 15
 
 [[main]]
-  name = "Get Started"
-  weight = 30
-  identifier = "get-started"
-  url = "/docs/prologue/introduction/"
-
-[[main]]
-  name = "Quick Start"
+  name = "Farrell Data"
   weight = 40
-  identifier = "quick-start"
-  url = "/docs/prologue/quick-start/" #path to markdown file where content/en/ is the root
-  parent = "get-started"
+  identifier = "farrell"
+  url = "/docs/farrell/" #path to markdown file where content/en/ is the root
+  parent = "Networks"
 
 [[main]]
-  name = "Tutorial"
+  name = "Kenny Data"
   weight = 50
-  identifier = "tutorial"
-  url = "https://getdoks.org/tutorial/introduction/"
-  parent = "get-started"
+  identifier = "kenny"
+  url = "/docs/kenny/"
+  parent = "Networks"
 
 [[social]]
   name = "GitHub"
