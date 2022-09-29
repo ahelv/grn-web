@@ -10,10 +10,10 @@ type: docs
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-net <- 'data/network/fns-genie.rds'
+net <- 'data/network/kna-genie.rds'
 max_width <- 1
 max_node <- 6
-title <- 'GENIE3'
+title <- 'GENIE3 kna'
 ```
 
 
@@ -21,6 +21,6 @@ title <- 'GENIE3'
 
 ```
 
-[Download Hub Gene List](/tables/GENIE3.html)
+[Download Hub Gene List](/tables/GENIE3 kna.html)
 
-[Download Network Image](/en/docs/farrell/GENIE3/GENIE3_files/figure-html/unnamed-chunk-3-1.png)
+[Download Network Image](/en/docs/kenny/GENIE3/GENIE3_files/figure-html/unnamed-chunk-3-1.png)

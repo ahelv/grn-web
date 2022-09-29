@@ -10,10 +10,10 @@ type: docs
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-net <- 'data/network/gl/fns-mall-s2.rds'
+net <- 'data/network/gl/kna-mall-s2.rds'
 max_width <- 1
 max_node <- 6
-title <- 'GL MALL S2'
+title <- 'GL MALL S2 kna'
 ```
 
 
@@ -21,6 +21,6 @@ title <- 'GL MALL S2'
 
 ```
 
-[Download Hub Gene List](/tables/GL MALL S2.html)
+[Download Hub Gene List](/tables/GL MALL S2 kna.html)
 
-[Download Network Image](/en/docs/farrell/Graphical-LASSO/MALL/s2_files/figure-html/unnamed-chunk-3-1.png)
+[Download Network Image](/en/docs/kenny/Graphical-LASSO/MALL/s2_files/figure-html/unnamed-chunk-3-1.png)

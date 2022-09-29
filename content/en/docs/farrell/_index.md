@@ -1,5 +1,5 @@
 ---
-title: "Farrell Data Networks"
+title: "Farrell Data (Networks)"
 description: ""
 lead: ""
 date: 2022-01-18T19:58:14+01:00

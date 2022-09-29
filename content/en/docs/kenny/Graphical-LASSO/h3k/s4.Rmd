@@ -10,10 +10,10 @@ type: docs
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-net <- 'data/network/gl/fns-h3k-s4.rds'
+net <- 'data/network/gl/kna-h3k-s4.rds'
 max_width <- 1
 max_node <- 6
-title <- 'GL H3K27Ac S4'
+title <- 'GL H3K27Ac S4 kna'
 ```
 
 
@@ -21,6 +21,6 @@ title <- 'GL H3K27Ac S4'
 
 ```
 
-[Download Hub Gene List](/tables/GL H3K27Ac S4.html)
+[Download Hub Gene List](/tables/GL H3K27Ac S4 kna.html)
 
-[Download Network Image](/en/docs/farrell/Graphical-LASSO/h3k/s4_files/figure-html/unnamed-chunk-3-1.png)
+[Download Network Image](/en/docs/kenny/Graphical-LASSO/h3k/s4_files/figure-html/unnamed-chunk-3-1.png)

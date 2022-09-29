@@ -10,10 +10,10 @@ type: docs
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-net <- 'data/network/gl/fns-mspc-s4.rds'
+net <- 'data/network/gl/kna-mspc-s4.rds'
 max_width <- 1
 max_node <- 6
-title <- 'GL MSPC S4'
+title <- 'GL MSPC S4 kna'
 ```
 
 
@@ -21,6 +21,6 @@ title <- 'GL MSPC S4'
 
 ```
 
-[Download Hub Gene List](/tables/GL MSPC S4.html)
+[Download Hub Gene List](/tables/GL MSPC S4 kna.html)
 
-[Download Network Image](/en/docs/farrell/Graphical-LASSO/MSPC/s4_files/figure-html/unnamed-chunk-3-1.png)
+[Download Network Image](/en/docs/kenny/Graphical-LASSO/MSPC/s4_files/figure-html/unnamed-chunk-3-1.png)
