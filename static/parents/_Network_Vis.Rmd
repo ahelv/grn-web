@@ -1,0 +1,40 @@
+---
+title: "Network Visualization"
+author: "Annika Helverson"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, out.width = "99%")
+knitr::opts_knit$set(root.dir = "/Users/ahelverson/Desktop/RA/Patrick/clb-cornell-grn/")
+library(miceadds)
+library(magrittr)
+library(igraph)
+library(ggraph)
+library(reactable)
+library(data.table)
+library(downloadthis)
+source.all(path = '/Users/ahelverson/Desktop/RA/Patrick/clb-cornell-grn/R')
+```
+
+
+```{r, echo=FALSE, warning = FALSE}
+graph <- make_graph(net) 
+graph %>% plot_graph(max_width = max_width, max_node = max_node) +
+  ggtitle(title)
+
+
+graph %>% 
+  hub_genes %>%
+  .[, Rank := 1:nrow(.)] %>%
+  reactable(filterable = TRUE, searchable = TRUE, highlight = TRUE, 
+            resizable = TRUE,
+            theme = reactableTheme(color = "white", backgroundColor = "#3C3C3C", 
+                                 borderColor = "white",
+                                 highlightColor = "grey83"),
+            fullWidth = TRUE)
+```
+
+
+

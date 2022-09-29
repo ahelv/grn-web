@@ -1,19 +1,19 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "Periderm GRN"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+titleAddition = "An analysis of the network structure"
+description = "We use various LASSO-based methods as well as correlation-based approaches to reconstruct the gene regulatory network of the Periderm."
 
 ## Documentation
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["net.jpg"]
 ogLocale = "en_US"
 domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+titleHome = "Periderm GRN"
 
 ## Twitter Cards
 twitterSite = "@getdoks"
@@ -21,12 +21,12 @@ twitterCreator = "@henkverlinde"
 
 ## JSON-LD
 # schemaType = "Person"
-schemaType = "Organization"
-schemaName = "Doks"
-schemaAuthor = "Henk Verlinde"
+schemaType = "Research"
+schemaName = "GRN"
+schemaAuthor = "Annika Helverson"
 schemaAuthorTwitter = "https://twitter.com/henkverlinde"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/annika-helverson-a67554145/"
+schemaAuthorGitHub = "https://github.com/ahelv"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
@@ -80,11 +80,11 @@ alertText = "Introducing the Doks child theme, several DX + UX updates, and more
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-docsRepo = "https://github.com/h-enk/doks"
-docsRepoBranch = "master"
+docsRepo = "https://github.com/ahelv/grn-web"
+docsRepoBranch = "main"
 docsRepoSubPath = ""
-editPage = false
-lastMod = false
+editPage = true
+lastMod = true
 
 [sections]
   sectionNav = ["docs", "guides"]

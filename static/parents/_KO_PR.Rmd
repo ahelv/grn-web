@@ -1,0 +1,46 @@
+---
+title: "Knockout PR Curves"
+author: "Annika Helverson"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, out.width = "99%")
+knitr::opts_knit$set(root.dir = "/Users/ahelverson/Desktop/RA/Patrick/clb-cornell-grn/")
+library(miceadds)
+library(magrittr)
+library(data.table)
+library(stringr)
+library(ggplot2)
+source.all(path = '/Users/ahelverson/Desktop/RA/Patrick/clb-cornell-grn/R')
+```
+
+
+```{r, echo=FALSE, warning = FALSE}
+gs <- lapply(KO, function(x) make_gs(x, 'lfsr < 0.01'))
+
+combine_pr(nets, gs[[1]]) %>% 
+  pr_plot('Strength') + ggtitle('cebpb')
+
+combine_pr(nets, gs[[2]]) %>% 
+  pr_plot('Strength') + ggtitle('GATA3')
+
+combine_pr(nets, gs[[3]]) %>% 
+  pr_plot('Strength') + ggtitle('GRHL3')
+
+combine_pr(nets, gs[[4]]) %>% 
+  pr_plot('Strength') + ggtitle('IRF6')
+
+combine_pr(nets, gs[[5]]) %>% 
+  pr_plot('Strength') + ggtitle('KLF17')
+
+combine_pr(nets, gs[[6]]) %>% 
+  pr_plot('Strength') + ggtitle('TFAP2a')
+
+combine_pr(nets, gs[[7]]) %>% 
+  pr_plot('Strength') + ggtitle('TFAP2a2c')
+
+combine_pr(nets, gs[[8]]) %>% 
+  pr_plot('Strength') + ggtitle('ZNF750')
+```
