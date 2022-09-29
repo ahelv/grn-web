@@ -8,6 +8,8 @@ enableRobotsTXT = true
 paginate = 7
 rssLimit = 10
 
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit", "\\.utf8"]
+
 # Multilingual
 defaultContentLanguage = "en"
 disableLanguages = ["de", "nl"]
@@ -108,3 +110,8 @@ rel  = "sitemap"
   [[module.mounts]]
     source = "node_modules/@hyas/images/layouts"
     target = "layouts"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

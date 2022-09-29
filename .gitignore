@@ -1,7 +1,9 @@
 node_modules
-public
-resources
+/public
+/resources
 .netlify
 .hugo_build.lock
 .Rproj.user
 .Rproj
+.DS_Store
+Thumbs.db
