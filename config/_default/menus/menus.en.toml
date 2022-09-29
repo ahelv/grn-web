@@ -32,14 +32,14 @@
   name = "Farrell Data"
   weight = 40
   identifier = "farrell"
-  url = "/docs/farrell/ #path to markdown file where content/en/ is the root
+  url = "/docs/farrell/Introduction" #path to markdown file where content/en/ is the root
   parent = "Networks"
 
 [[main]]
   name = "Kenny Data"
   weight = 50
   identifier = "kenny"
-  url = "/docs/kenny/"
+  url = "/docs/kenny/Introduction"
   parent = "Networks"
 
 [[social]]
