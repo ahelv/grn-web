@@ -27,7 +27,17 @@
   weight = 10
   identifier = "lorem"
   url = "/tutorial/lorem/"
-
+  
+[[main]]
+  name = "Networks"
+  url = "/networks/"
+  weight = 20
+  
+[[main]]
+  name = "PR-Curves"
+  url = "/pr-curves/"
+  weight = 20
+  
 [[main]]
   name = "Docs"
   url = "/docs/prologue/introduction/"
@@ -38,11 +48,6 @@
 #   name = "Tutorial"
 #   url = "/tutorial/lorem/ipsum/"
 #   weight = 15
-
-[[main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 20
 
 [[main]]
   name = "Get Started"
