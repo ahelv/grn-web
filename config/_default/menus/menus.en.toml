@@ -1,33 +1,3 @@
-[[docs]]
-  name = "Farrell Data"
-  weight = 10
-  identifier = "farrell"
-  url = "/docs/farrell/overview"
-
-[[docs]]
-  name = "Kenny Data"
-  weight = 60
-  identifier = "kenny"
-  url = "/docs/kenny/"
-
-# [[docs]]
-#   name = "Lorem"
-#   weight = 70
-#   identifier = "lorem"
-#   url = "/docs/lorem/"
-
-[[guide]]
-  name = "Lorem"
-  weight = 10
-  identifier = "lorem"
-  url = "/guide/lorem/"
-
-[[tutorial]]
-  name = "Lorem"
-  weight = 10
-  identifier = "lorem"
-  url = "/tutorial/lorem/"
-  
 [[main]]
   name = "PR-Curves"
   url = "/blog/"
@@ -62,7 +32,7 @@
   name = "Farrell Data"
   weight = 40
   identifier = "farrell"
-  url = "/docs/farrell/overview" #path to markdown file where content/en/ is the root
+  url = "/docs/farrell/ #path to markdown file where content/en/ is the root
   parent = "Networks"
 
 [[main]]
