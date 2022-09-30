@@ -21,6 +21,6 @@ title <- 'GL SCAT S0 kna'
 
 ```
 
-[Download Hub Gene List](/tables/GL SCAT S0 kna.html)
+[Download Hub Gene List](/tables/GL SCAT S0 kna.html){:target="_blank"}
 
-[Download Network Image](/en/docs/kenny/Graphical-LASSO/SCAT/s0_files/figure-html/unnamed-chunk-3-1.png)
+[Download Network Image](/en/docs/kenny/Graphical-LASSO/SCAT/s0_files/figure-html/unnamed-chunk-3-1.png){:target="_blank"}
