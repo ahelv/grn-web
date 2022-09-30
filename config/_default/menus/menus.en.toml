@@ -5,16 +5,16 @@
   
 [[main]]
   name = "Farrell Data"
-  weight = 40
-  identifier = "farrell"
-  url = "/dccs/pr/farrell/Introduction" #path to markdown file where content/en/ is the root
+  weight = 60
+  identifier = "farrell-pr"
+  url = "/docs/pr/farrell/Introduction" #path to markdown file where content/en/ is the root
   parent = "PR-Curves"
 
 [[main]]
   name = "Kenny Data"
-  weight = 50
-  identifier = "kenny"
-  url = "/dccs/pr/kenny/Introduction"
+  weight = 70
+  identifier = "kenny-pr"
+  url = "/docs/pr/kenny/Introduction"
   parent = "PR-Curves"
   
 [[main]]
