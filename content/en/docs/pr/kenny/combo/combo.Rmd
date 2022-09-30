@@ -1,0 +1,25 @@
+---
+title: "ChIP + KO"
+author: "Annika Helverson"
+date: "`r Sys.Date()`"
+output: html_document
+weight: 1
+type: docs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+KO <- c('data/knockout/grhl3_KO.rds', 'data/knockout/irf6_KO.rds', 'data/knockout/tfap2a2c_KO.rds')
+
+chip <- c('data/chip/grhl3_chip_100kb.rds', 'data/chip/irf6_chip_100kb.rds',
+                  'data/chip/tfap2a_chip_100kb.rds')
+
+nets <- c('data/network/kna-genie.rds', 'data/network/kna-wgcna.rds',
+          'data/network/gl/kna-mall-s2.rds', 'data/network/gl/kna-m100-s2.rds')
+```
+
+
+```{r, child = '/Users/ahelverson/Desktop/RA/Patrick/web/sunil-site/static/parents/_combo_PR.Rmd'}
+
+```

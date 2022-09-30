@@ -1,0 +1,33 @@
+---
+title: "ChIP+KO PR Curves"
+author: "Annika Helverson"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, out.width = "99%")
+knitr::opts_knit$set(root.dir = "/Users/ahelverson/Desktop/RA/Patrick/clb-cornell-grn/")
+library(miceadds)
+library(magrittr)
+library(data.table)
+library(stringr)
+library(ggplot2)
+source.all(path = '/Users/ahelverson/Desktop/RA/Patrick/clb-cornell-grn/R')
+```
+
+
+```{r, echo=FALSE, warning = FALSE}
+gs_KO <- lapply(KO, function(x) make_gs(x, 'lfsr < 0.01'))
+gs_chip <- lapply(chip, function(x) make_gs(x))
+
+gs <- mapply(function(x, y) combine_gs(x, y), gs_KO, gs_chip, SIMPLIFY = FALSE)
+
+lapply(gs, function(x) combine_pr(gs = x, 
+                                    files = nets,
+                                    collapse = TRUE) %>% 
+         pr_plot(group = 'Network') + ggtitle(x$TF[1]))
+
+combine_pr(gs = gs, files = nets, collapse = TRUE) %>%
+  pr_plot(group = 'Network') + ggtitle('All TFs Combined')
+```
