@@ -1,0 +1,101 @@
+---
+title: "Miraldi Figure"
+author: "Annika Helverson"
+date: "2022-09-30"
+output: html_document
+weight: 1
+type: docs
+---
+
+
+
+<div id="combined-tfs" class="section level2">
+<h2>Combined TFs</h2>
+<pre class="r"><code>miraldi_plot(chip_dat = chip_100_p_kna, KO_dat = KO_p_kna, combo_dat = combo_100_p_kna, 
+             title = &#39;Kenny 100kb Flanking Region&#39;)             </code></pre>
+<p><img src="/en/docs/pr/kenny/mir/miraldi_fig_files/figure-html/mir-kna-1.png" width="99%" /></p>
+</div>
+<div id="individual-tfs" class="section level2">
+<h2>Individual TFs</h2>
+<div id="irf6" class="section level3">
+<h3>IRF6</h3>
+<pre class="r"><code>irf6_combo &lt;- pr_plot(combine_pr(gs = list(irf6_combo_100kb_gs),
+                                      files = c(&#39;data/network/kna-genie.rds&#39;,
+                                                &#39;data/network/kna-wgcna.rds&#39;,
+                                                &#39;data/network/gl/kna-mall-s2.rds&#39;,
+                                                &#39;data/network/gl/kna-m100-s2.rds&#39;),
+                                      collapse = TRUE), group = &#39;Network&#39;)
+
+irf6_chip &lt;- pr_plot(combine_pr(gs = list(irf6_chip100kb_gs), 
+                           files = c(&#39;data/network/kna-genie.rds&#39;,
+                                                &#39;data/network/kna-wgcna.rds&#39;,
+                                                &#39;data/network/gl/kna-mall-s2.rds&#39;,
+                                                &#39;data/network/gl/kna-m100-s2.rds&#39;),
+                           collapse = TRUE), group = &#39;Network&#39;)
+
+irf6_KO &lt;- pr_plot(combine_pr(gs = list(irf6_KO_gs), 
+                               files = c(&#39;data/network/kna-genie.rds&#39;,
+                                                &#39;data/network/kna-wgcna.rds&#39;,
+                                                &#39;data/network/gl/kna-mall-s2.rds&#39;,
+                                                &#39;data/network/gl/kna-m100-s2.rds&#39;), collapse = TRUE), group = &#39;Network&#39;)
+
+miraldi_plot(chip_dat = irf6_chip, KO_dat = irf6_KO, 
+             combo_dat = irf6_combo, 
+             title = &#39;IRF6 Kenny 100kb Flanking Region&#39;)             </code></pre>
+<p><img src="/en/docs/pr/kenny/mir/miraldi_fig_files/figure-html/irf6-1.png" width="99%" /></p>
+</div>
+<div id="grhl3" class="section level3">
+<h3>GRHL3</h3>
+<pre class="r"><code>grhl3_combo &lt;- pr_plot(combine_pr(gs = list(grhl3_combo_100kb_gs),
+                                      files = c(&#39;data/network/kna-genie.rds&#39;,
+                                                &#39;data/network/kna-wgcna.rds&#39;,
+                                                &#39;data/network/gl/kna-mall-s2.rds&#39;,
+                                                &#39;data/network/gl/kna-m100-s2.rds&#39;),
+                                      collapse = TRUE), group = &#39;Network&#39;)
+
+grhl3_chip &lt;- pr_plot(combine_pr(gs = list(grhl3_chip100kb_gs), 
+                           files = c(&#39;data/network/kna-genie.rds&#39;,
+                                                &#39;data/network/kna-wgcna.rds&#39;,
+                                                &#39;data/network/gl/kna-mall-s2.rds&#39;,
+                                                &#39;data/network/gl/kna-m100-s2.rds&#39;),
+                           collapse = TRUE), group = &#39;Network&#39;)
+
+grhl3_KO &lt;- pr_plot(combine_pr(gs = list(grhl3_KO_gs), 
+                               files = c(&#39;data/network/kna-genie.rds&#39;,
+                                                &#39;data/network/kna-wgcna.rds&#39;,
+                                                &#39;data/network/gl/kna-mall-s2.rds&#39;,
+                                                &#39;data/network/gl/kna-m100-s2.rds&#39;), collapse = TRUE), group = &#39;Network&#39;)
+
+miraldi_plot(chip_dat = grhl3_chip, KO_dat = grhl3_KO, 
+             combo_dat = grhl3_combo, 
+             title = &#39;GRHL3 Kenny 100kb Flanking Region&#39;)             </code></pre>
+<p><img src="/en/docs/pr/kenny/mir/miraldi_fig_files/figure-html/grhl3-1.png" width="99%" /></p>
+</div>
+<div id="tfap2a" class="section level3">
+<h3>TFAP2a</h3>
+<pre class="r"><code>tfap2a_combo &lt;- pr_plot(combine_pr(gs = list(tfap2a_combo_100kb_gs),
+                                      files = c(&#39;data/network/kna-genie.rds&#39;,
+                                                &#39;data/network/kna-wgcna.rds&#39;,
+                                                &#39;data/network/gl/kna-mall-s2.rds&#39;,
+                                                &#39;data/network/gl/kna-m100-s2.rds&#39;),
+                                      collapse = TRUE), group = &#39;Network&#39;)
+
+tfap2a_chip &lt;- pr_plot(combine_pr(gs = list(tfap2a_chip100kb_gs), 
+                           files = c(&#39;data/network/kna-genie.rds&#39;,
+                                                &#39;data/network/kna-wgcna.rds&#39;,
+                                                &#39;data/network/gl/kna-mall-s2.rds&#39;,
+                                                &#39;data/network/gl/kna-m100-s2.rds&#39;),
+                           collapse = TRUE), group = &#39;Network&#39;)
+
+tfap2a_KO &lt;- pr_plot(combine_pr(gs = list(tfap2a_KO_gs), 
+                               files = c(&#39;data/network/kna-genie.rds&#39;,
+                                                &#39;data/network/kna-wgcna.rds&#39;,
+                                                &#39;data/network/gl/kna-mall-s2.rds&#39;,
+                                                &#39;data/network/gl/kna-m100-s2.rds&#39;), collapse = TRUE), group = &#39;Network&#39;)
+
+miraldi_plot(chip_dat = tfap2a_chip, KO_dat = tfap2a_KO, 
+             combo_dat = tfap2a_combo, 
+             title = &#39;TFAP2a Kenny 100kb Flanking Region&#39;)             </code></pre>
+<p><img src="/en/docs/pr/kenny/mir/miraldi_fig_files/figure-html/tfap2a-1.png" width="99%" /></p>
+</div>
+</div>
