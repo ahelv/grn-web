@@ -1,25 +1,25 @@
 [[main]]
   name = "PR-Curves"
-  url = "/blog/"
+  url = "/docs/pr/"
   weight = 20
   
 [[main]]
   name = "Farrell Data"
   weight = 40
   identifier = "farrell"
-  url = "/blog/" #path to markdown file where content/en/ is the root
+  url = "/dccs/pr/farrell/Introduction" #path to markdown file where content/en/ is the root
   parent = "PR-Curves"
 
 [[main]]
   name = "Kenny Data"
   weight = 50
   identifier = "kenny"
-  url = "/blog/"
+  url = "/dccs/pr/kenny/Introduction"
   parent = "PR-Curves"
   
 [[main]]
   name = "Networks"
-  url = "/docs/"
+  url = "/docs/nets/"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 10
 
@@ -32,14 +32,14 @@
   name = "Farrell Data"
   weight = 40
   identifier = "farrell"
-  url = "/docs/farrell/Introduction" #path to markdown file where content/en/ is the root
+  url = "/docs/nets/farrell/Introduction" #path to markdown file where content/en/ is the root
   parent = "Networks"
 
 [[main]]
   name = "Kenny Data"
   weight = 50
   identifier = "kenny"
-  url = "/docs/kenny/Introduction"
+  url = "/docs/nets/kenny/Introduction"
   parent = "Networks"
 
 [[social]]
