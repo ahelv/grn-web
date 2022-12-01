@@ -1,15 +1,6 @@
-<p align="center">
-  <a href="https://getdoks.org/">
-    <img alt="Doks" src="https://doks.netlify.app/doks.svg" width="60">
-  </a>
-</p>
-
-<h1 align="center">
-  Doks
-</h1>
 
 <h3 align="center">
-  Modern Documentation Theme
+  Cornell Lab Projects
 </h3>
 
 <p align="center">
